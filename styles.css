@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #222;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Section Styles */
+section {
+  padding: 50px;
+}
+
+section h2 {
+  font-size: 24px;
+}
+
+/* Course Card Styles */
+.course-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.course-card h3 {
+  font-size: 18px;
+}
+
+.course-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.course-card a {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Campus Tour Styles */
+.campus-tour {
+  /* Add styles for the 360-degree panoramic view and interactive hotspots */
+}
+
+/* Innovation Showcase Styles */
+.innovation-item {
+  display: inline-block;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.innovation-item img {
+  width: 100%;
+  height: auto;
+}
+
+.innovation-item h3 {
+  font-size: 16px;
+}
+
+.innovation-item p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.innovation-item a {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Research Hub Styles */
+.research-project {
+  margin-bottom: 20px;
+}
+
+.research-project h3 {
+  font-size: 18px;
+}
+
+.research-project p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.research-project a {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #333;
+  min-width: 200px;
+  display: none;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
