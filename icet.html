@@ -2,70 +2,193 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>TechVerse - Ilahia College</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilahia College of Engineering and Technology</title>
+  
+  <!-- Font Awesome CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet"/>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Bootstrap CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <header>
-    <div class="dropdown">
-      <button class="dropdown-btn">Menu</button>
-      <div class="dropdown-content">
-        <a href="#home">Home</a>
-        <a href="#courses">Courses</a>
-        <a href="#tour">Campus Tour</a>
-        <a href="#innovation">Innovation Showcase</a>
-        <a href="#research">Research Hub</a>
-      </div>
-    </div>
-    
-  </header>
+    <header>
+      <nav>
+        <div class="menu-icon">
+          <i class="fa fa-bars fa-2x"></i>
+        </div>
+        <div class="logo">
+          <img src="logo-removebg-preview.png" alt="Ilahia College of Engineering and Technology">
+        </div>
+        <div class="menu">
+          <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
   
   <section id="home">
-    <h1>Welcome to TechVerse</h1>
-    <p>Explore the future of education at Ilahia College of Engineering and Technology</p>
+    <div class="video-container">
+      <video class="home_video" src="assets\video (2).mp4" autoplay muted loop></video>
+    </div>
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Welcome to TechVerse</h1>
+      <p>Explore the future of education at Ilahia College of Engineering and Technology</p>
+    </div>
   </section>
   
   <section id="courses">
-    <h2>Courses</h2>
-    <div class="course-card">
-      <h3>Computer Science</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec orci eu urna condimentum.</p>
-      <a href="#">Learn More</a>
+    <div class="container">
+      <h2>Our Courses</h2>
+      <div id="courseCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#courseCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#courseCarousel" data-slide-to="1"></li>
+          <li data-target="#courseCarousel" data-slide-to="2"></li>
+          <li data-target="#courseCarousel" data-slide-to="3"></li>
+          <li data-target="#courseCarousel" data-slide-to="4"></li>
+          <li data-target="#courseCarousel" data-slide-to="5"></li>
+          <li data-target="#courseCarousel" data-slide-to="6"></li>
+          <li data-target="#courseCarousel" data-slide-to="7"></li>
+        </ol>
+        
+        <div class="carousel-inner">
+          <div class="arrow arrow-left"></div>
+          <div class="course-card text-center active">
+            <h3>Electronics and Communication</h3>
+            <p>Learn about electronics and communication systems and their impact on modern society.</p>
+          </div>
+          <div class="course-card text-center">
+            <h3>Computer Science</h3>
+            <p>Learn the fundamentals of computer science and explore various programming languages.</p>
+          </div>
+          <div class="course-card text-center">
+            <h3>Information Technology</h3>
+            <p>Develop expertise in information technology and explore emerging technologies and trends.</p>
+          </div>
+          <div class="course-card text-center">
+            <h3>Biotechnology</h3>
+            <p>Delve into the fascinating world of biotechnology and its applications in healthcare and agriculture.</p>
+          </div>
+          <div class="course-card text-center">
+            <h3>Mechanical Engineering</h3>
+            <p>Discover the world of mechanical engineering and design innovative machines and systems.</p>
+          </div>
+          <div class="arrow arrow-right"></div>
+        </div>
+  
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#courseCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#courseCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
-    <!-- Add more course cards here -->
   </section>
   
+  
   <section id="tour">
-    <h2>Campus Tour</h2>
-    <div class="campus-tour">
-      <!-- Add 360-degree panoramic images with interactive hotspots here -->
+    <div class="container">
+      <h2>Campus Tour</h2>
+      <div class="tour-images">
+        <!--<img src="campustour.jpg" alt="Campus Image 1">-->
+      </div>
     </div>
   </section>
   
   <section id="innovation">
-    <h2>Innovation Showcase</h2>
-    <div class="innovation-item">
-      <img src="project1.jpg" alt="Project 1">
-      <h3>Project 1 Title</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec orci eu urna condimentum.</p>
-      <a href="#">View Project</a>
+    <div class="container">
+      <h2>Innovation Showcase</h2>
+      <div class="innovation-grid">
+        <div class="innovation-card">
+          <img src="project1.jpg" alt="Project 1">
+          <h3>Smart Home Automation</h3>
+          <p>Control your home with the power of technology. Experience seamless automation.</p>
+        </div>
+        <div class="innovation-card">
+          <img src="project2.jpg" alt="Project 2">
+          <h3>Autonomous Vehicles</h3>
+          <p>Witness the future of transportation with our cutting-edge autonomous vehicles.</p>
+        </div>
+        <div class="innovation-card">
+          <img src="project3.jpg" alt="Project 3">
+          <h3>Sustainable Energy Solutions</h3>
+          <p>Discover innovative solutions for renewable energy generation and conservation.</p>
+        </div>
+        <div class="innovation-card">
+          <img src="project4.jpg" alt="Project 4">
+          <h3>Artificial Intelligence</h3>
+          <p>Explore the possibilities of AI and machine learning in various domains.</p>
+        </div>
+      </div>
     </div>
-    <!-- Add more innovation items here -->
   </section>
   
   <section id="research">
-    <h2>Research Hub</h2>
-    <div class="research-project">
-      <h3>Research Project Title</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec orci eu urna condimentum.</p>
-      <a href="#">Read More</a>
+    <div class="container">
+      <h2>Research Hub</h2>
+      <div class="research-cards">
+        <div class="research-card">
+          <h3>Robotics Research</h3>
+          <p>Contribute to the exciting field of robotics and develop intelligent robots for real-world applications.</p>
+        </div>
+        <div class="research-card">
+          <h3>Data Science</h3>
+          <p>Explore the vast field of data science and uncover valuable insights from complex datasets.</p>
+        </div>
+        <div class="research-card">
+          <h3>IoT Solutions</h3>
+          <p>Develop innovative Internet of Things (IoT) solutions for a connected and smarter world.</p>
+        </div>
+        <div class="research-card">
+          <h3>Blockchain Technology</h3>
+          <p>Investigate the potential of blockchain technology in various industries and create decentralized applications.</p>
+        </div>
+      </div>
     </div>
-    <!-- Add more research projects here -->
   </section>
   
   <footer>
-    <p>&copy; 2023 Ilahia College of Engineering and Technology. All rights reserved.</p>
+    <div class="footer-content">
+      <h3>TechVerse</h3>
+      <p>Ilahia College of Engineering and Technology</p>
+      <ul class="socials">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2023 Ilahia College of Engineering and Technology. All rights reserved.</p>
+    </div>
   </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
