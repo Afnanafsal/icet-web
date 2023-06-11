@@ -1,154 +1,448 @@
-/* Global Styles */
+*
+{
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  background-color: #000;
 }
 
-/* Header Styles */
-header {
-  background-color: #222;
-  padding: 20px;
-}
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-}
-
-/* Section Styles */
-section {
-  padding: 50px;
-}
-
-section h2 {
-  font-size: 24px;
-}
-
-/* Course Card Styles */
-.course-card {
-  background-color: #f5f5f5;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.course-card h3 {
-  font-size: 18px;
-}
-
-.course-card p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.course-card a {
-  color: #222;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Campus Tour Styles */
-.campus-tour {
-  /* Add styles for the 360-degree panoramic view and interactive hotspots */
-}
-
-/* Innovation Showcase Styles */
-.innovation-item {
-  display: inline-block;
-  width: 200px;
-  margin-right: 20px;
-}
-
-.innovation-item img {
+#home video {
   width: 100%;
   height: auto;
 }
 
-.innovation-item h3 {
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  z-index: 2;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue",sans-serif,poppins;
+  font-weight: lighter;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Beautiful-Full-HD-Wallpaper-Download-Free-PIC-WPE0010098.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.content {
+  width: 94%;
+  margin: 4em auto;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.logo {
+  line-height: 60px;
+  float: left;
+  margin: 16px 46px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+nav {
+  width: 100%;
+  line-height: 60px;
+}
+
+nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  transition: 1s;
+}
+
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
   font-size: 16px;
 }
 
-.innovation-item p {
-  font-size: 14px;
-  margin-bottom: 10px;
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #00000000;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
 }
 
-.innovation-item a {
-  color: #222;
-  text-decoration: none;
+@media(max-width: 786px) {
+
+  .logo {
+        position: absolute;
+        top: 0;
+        margin-top: 16px
+  }
+
+  nav ul {
+        max-height: 0px;
+        background: rgba(0, 0, 0, 0.5);
+  }
+
+  nav.black ul {
+        background: rgba(0, 0, 0, 0.5);
+  }
+
+  .showing {
+        max-height: 34em;
+  }
+
+  nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+  }
+  #home video{
+    width: 200%;
+    align-self: center;
+    margin-left: -50%;
+    height: 100%;
+  }
+  .menu-icon {
+        display: block;
+  }
+
+}
+.logo img {
+  height: 200px;
+  margin-right: 10px;
+  margin-top: -50px;
+}
+
+.logo h1 {
+  font-size: 26px;
   font-weight: bold;
+  font-family:poppins;
+  text-transform:uppercase;
+  margin-top: -80px;
+  letter-spacing: 2px;
+  padding-left:  425px;
+  
+}
+.navbar-toggler 
+{
+justify-content: end;
 }
 
-/* Research Hub Styles */
-.research-project {
+.section {
+  padding: 80px 20px;
+}
+
+#home .content {
+  text-align: center;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.content h1 {
+  font-size: 48px;
+  font-family: poppins;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#courses {
+  background-color: #222;
+  color: #fff;
+}
+
+#courses h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.course-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 4px;
   margin-bottom: 20px;
 }
 
-.research-project h3 {
-  font-size: 18px;
-}
-
-.research-project p {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.research-project a {
-  color: #222;
-  text-decoration: none;
+.course-card h3 {
+  font-size: 24px;
   font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
-/* Footer Styles */
-footer {
+.course-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+.course-card a {
+  display: inline-block;
+  background-color: #fff;
+  color: #222;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.course-card a:hover {
   background-color: #222;
   color: #fff;
-  padding: 20px;
+}
+
+#tour {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 80px 0;
+}
+
+#tour h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.panorama img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+#innovation {
+  background-color: #fff;
+  color: #222;
+  padding: 80px 20px;
   text-align: center;
 }
-.dropdown {
-  position: relative;
-  display: inline-block;
+
+#innovation h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222;
 }
 
-.dropdown-btn {
-  background-color: #333;
+.innovation-item {
+  margin-bottom: 40px;
+}
+
+.innovation-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.innovation-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.innovation-item p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+#research {
+  background-color: #f2f2f2;
+  color: #222;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#research h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+#research p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
   color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
 }
 
-.dropdown-content {
-  position: absolute;
-  background-color: #333;
-  min-width: 200px;
-  display: none;
-  z-index: 1;
+.footer-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
-.dropdown-content a {
-  color: #fff;
-  padding: 12px 16px;
-  display: block;
+.footer-links ul li {
+  margin-right: 20px;
+}
+
+.footer-links ul li a {
   text-decoration: none;
+  color: #fff;
 }
 
-.dropdown:hover .dropdown-content {
+.footer-social a {
+  color: #fff;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #aaa;
+}
+
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item {
+  text-align: center;
+}
+.menu {
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-items {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-items li {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+  }
+}
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item .course-card {
+  margin: 0 auto;
+}
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item .course-card {
+  margin: 0 0 50px --50px;
+  align-items: center;
+  justify-content:center ;
+}
+.carousel-item {
   display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #555;
+  align-items: center;
+  justify-content: center; /* Adjust the value as needed */
 }
