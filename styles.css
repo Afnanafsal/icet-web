@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #000;
+  background-color: #fff;
 }
 
 
@@ -48,11 +48,16 @@ header {
 }
 
 .content {
-  width: 94%;
+  width: 100%;
   margin: 4em auto;
-  font-size: 20px;
+  font-size: 0px;
   line-height: 30px;
   text-align: justify;
+}
+.content h1
+{
+font-family: poppins;
+font-size: 40px;
 }
 
 .logo {
@@ -94,6 +99,16 @@ nav ul li a {
   color: #fff;
   font-size: 16px;
 }
+nav ul li a:hover {
+  text-decoration: none;
+  color: aqua;
+  font-size: 20px;
+}
+
+.logo img:hover {
+  transform: scale(110%);
+}
+
 
 .menu-icon {
   line-height: 60px;
@@ -180,10 +195,11 @@ justify-content: end;
   text-align: center;
   padding: 100px 20px;
   color: #fff;
+  background-color:transparent;
 }
 
 .content h1 {
-  font-size: 48px;
+  font-size: 50px;
   font-family: poppins;
   font-weight: bold;
   margin-bottom: 20px;
@@ -197,6 +213,7 @@ justify-content: end;
 }
 
 #courses {
+  list-style:upper-roman;
   background-color: #222;
   color: #fff;
 }
