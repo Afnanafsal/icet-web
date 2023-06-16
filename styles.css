@@ -95,13 +95,15 @@ nav ul li {
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #fff;
+  color:midnightblue;
+  font-weight: bold;
+  text-transform:uppercase;
+  text-decoration-style:double ;
   font-size: 16px;
 }
 nav ul li a:hover {
   text-decoration: none;
-  color: aqua;
+  color: slateblue;
   font-size: 20px;
 }
 
@@ -187,6 +189,7 @@ justify-content: end;
 
 #home .content {
   text-align: center;
+  height: 600px;
 }
 
 .content {
@@ -195,25 +198,27 @@ justify-content: end;
   text-align: center;
   padding: 100px 20px;
   color: #fff;
-  background-color:transparent;
+  background-color:skyblue;
 }
 
 .content h1 {
   font-size: 50px;
   font-family: poppins;
+  color: aliceblue;
   font-weight: bold;
-  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 5%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .content p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 24px;
+  color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #courses {
-  list-style:upper-roman;
   background-color: #222;
   color: #fff;
 }
